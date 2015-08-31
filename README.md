@@ -27,8 +27,8 @@ CxImage mask(CxImage input_Image, BOOL Negative)
 	//在这里创建遮罩层
 
 	if(!basic.AlphaIsValid())
-
 		basic.AlphaCreate();           //创建透明通道
+
 	if(Negative)
 		alpha.Negative();              //遮罩层反色处理
 
